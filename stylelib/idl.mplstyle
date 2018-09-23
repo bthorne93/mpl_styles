@@ -13,15 +13,16 @@ figure.figsize          :   4,4
 
 # In this example I am *not* setting "text.usetex : True", therefore the     
 # following ensures that the fonts in math mode agree with the regular ones.  
-# 
+#
+text.usetex : True
 font.family             :   monospace
-mathtext.fontset        :   custom
-mathtext.rm  : monospace
-mathtext.cal : monospace
-mathtext.tt  : monospace
-mathtext.it  : monospace:italic
-mathtext.bf  : monospace:bold
-mathtext.sf  : monospace
+#mathtext.fontset        :   custom
+#mathtext.rm  : monospace
+#mathtext.cal : monospace
+#mathtext.tt  : monospace
+#mathtext.it  : monospace:italic
+#mathtext.bf  : monospace:bold
+#mathtext.sf  : monospace
 
 # Add ticks at top and right, and make all ticks inside axia
 xtick.top : True
@@ -49,3 +50,5 @@ lines.markeredgewidth   :   1
 legend.numpoints        :   1
 legend.frameon          :   False
 legend.handletextpad    :   0.3
+
+axes.prop_cycle : cycler('color', ['0.1', '0.5', '0.9']) + cycler('linestyle', ['-', '--', '-.'])
